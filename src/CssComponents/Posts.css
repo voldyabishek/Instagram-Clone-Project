@@ -1,7 +1,36 @@
+.Post-page{
+display: flex;
+justify-content: center;
+  
+}
+
+.All-posts{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  justify-content: center;
+}
+
+
 #profile-pic{
   height:40px;
+  width:40px;
+ 
+}
+.profile{
+  display: flex;
+  flex-direction:row;
+  gap:5px;
+
 }
 
 #post{
     width:300px;
+}
+
+.lcs-icons{
+display: flex;
+flex-direction:row;
+gap:17px;
+font-size: 27px;
 }

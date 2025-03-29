@@ -6,6 +6,7 @@
     margin:30px;
 }
 .sidebar-list {
+  position:fixed;
   display: flex;
   flex-direction: column;
   gap: 28px;

@@ -2,6 +2,13 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../CssComponents/Posts.css";
 
+// icons
+import { FiHeart } from "react-icons/fi"; //like icon
+import { FaRegComment } from "react-icons/fa6";//comment icon
+import { GoPaperAirplane } from "react-icons/go";
+import { AiOutlineRetweet } from "react-icons/ai"; //retweet icon
+
+
 const Posts = () => {
   const [posts, setPosts] = useState([]);
 
@@ -15,36 +22,34 @@ const Posts = () => {
 
   return (
     <>
-      <div>
+      <div className="Post-page">
         {posts.length > 0 ? (
-          <div>
+          <div className="All-posts">
             {posts.map((post) => (
               <div key={post.id}>
-                <div>
+                <div className="profile ">
                   {/* profile pic */}
-                  <img
-                    src={post.user.profilePic}
-                    className="rounded-circle"
-                    id="profile-pic"
-                    alt="profile picture"
-                  />
+                  <img src={post.user.profilePic} className="rounded-circle" id="profile-pic" alt="profile picture" />
                   <h5>{post.user.username}</h5>
-                </div>
+                  </div>
                 {/* post pic */}
                 <img src={post.image} alt="post" id="post" />
-
-                <>
-                 <b> {post.likes}</b>
-               </>
-                  
-              </div>
-
-                       
                 
-               
-                  
+               <div className="lcs-icons">
+             {/* like,comment,share=>lcs-icons */}
+             <FiHeart/>
+             <FaRegComment />
+             <GoPaperAirplane />
+             <AiOutlineRetweet/>
+               </div>
+               <div>
+                <p>{post.likes}Likes and others</p>
+                <p>{post.description}</p>
+                <p>{post.caption}</p>
 
-
+               </div>
+    
+              </div>
 
             ))}
             ;
