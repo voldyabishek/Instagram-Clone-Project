@@ -1,0 +1,22 @@
+.rounded-circle{
+    height:40px;
+}
+
+.suggestion{
+    margin:25px;
+    width:66%;
+}
+
+
+.suggestion h5{
+    font-size: 18px;
+    margin-top: 5px !important;
+    
+}
+
+.profile{
+ display: flex;
+flex-direction:row;
+ gap:10px;
+ 
+}

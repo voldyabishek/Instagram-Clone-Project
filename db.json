@@ -75,6 +75,47 @@
         ],
         "timestamp": "2025-03-25T18:30:00Z"
       }
+    ],
+    "profile":{
+     
+        "userId": "101",
+        "username": "john_doe",
+        "profilePic": "profile-img1.avif",
+        "fullName": "John Doe"
+     
+    },
+    "suggestions":[
+
+      {
+        "userId": "101",
+        "username": "john_doe",
+        "profilePic": "profile-img1.avif",
+        "fullName": "John Doe"
+      },
+      {
+        "userId": "104",
+        "username": "susan_m",
+        "profilePic": "profile-img2.avif",
+        "fullName": "Susan M"
+      },
+      {
+        "userId": "106",
+        "username": "lily_t",
+        "profilePic": "profile-img3.avif",
+        "fullName": "Lily Taylor"
+      },
+      {
+        "userId": "106",
+        "username": "lily_two",
+        "profilePic": "profile-img3.avif",
+        "fullName": "Lily Taylor"
+      },
+      {
+        "userId": "106",
+        "username": "lily_yt",
+        "profilePic": "profile-img3.avif",
+        "fullName": "Lily Taylor"
+      }
     ]
   }
   

@@ -1,7 +1,7 @@
 .Post-page{
 display: flex;
 justify-content: center;
-  
+margin-top: 8px;
 }
 
 .All-posts{
@@ -15,7 +15,7 @@ justify-content: center;
 #profile-pic{
   height:40px;
   width:40px;
- 
+  margin-top: -5px;
 }
 .profile{
   display: flex;
