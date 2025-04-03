@@ -1,5 +1,5 @@
 .rounded-circle{
-    height:40px;
+    height:30px;
 }
 
 .suggestion{
@@ -19,4 +19,19 @@
 flex-direction:row;
  gap:10px;
  
+}
+
+.suggestions{
+   margin-bottom:15px;
+   /* margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    
+}
+.suggestion-list{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
 }

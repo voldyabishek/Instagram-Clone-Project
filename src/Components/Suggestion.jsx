@@ -8,7 +8,7 @@ const Suggestion = () => {
 
 
   const [profile,setProfile] = useState(null);
-  // const [suggestions,setSuggestion] = useState([]);
+  const [suggestions,setSuggestion] = useState([]);
 
   useEffect(()=>{
  
@@ -19,10 +19,10 @@ const Suggestion = () => {
     catch(err => console.log(err))
 
     // for suggestion json data fetching
-    /* fetch("http://localhost:3000/suggestions").
+    fetch("http://localhost:3000/suggestions").
     then(data => data.json()).
     then(data => setSuggestion(data)).
-    catch(err => console.log(err)) */
+    catch(err => console.log(err))
   },[]); 
 
   return (
@@ -37,7 +37,40 @@ const Suggestion = () => {
       <p className='ms-auto  text-primary'>Switch</p>
       </div>
        :<p>Loading</p> }
+
+      <div className='d-flex '><br/>
+      <p>Suggested for you</p>
+      <b className='  ms-auto '>See All</b>
+
+      </div>
+      {/* this div for suggestion list data mapping */}
+           <div  >
+
+            {suggestions.length > 0 ?(
+              <div>
+              {suggestions.map((suggestion)=>(
+                       
+
+                       <div className='suggestions'  key={suggestion.id}>
+                            <div className='suggestion-list '>
+                              <img className="rounded-circle"src={suggestion.profilePic}></img>
+                              <h5>{suggestion.username}</h5>
+                              <p className='text-primary  '>Follow</p>
+                            </div>
+                       </div>
+
+              ))}
+              </div>
+            ):(
+              <div>
+                <p>Loading</p>
+              </div>
+            )}
+           </div>
+           
+
        </div>
+
      </div>
     
     </>
