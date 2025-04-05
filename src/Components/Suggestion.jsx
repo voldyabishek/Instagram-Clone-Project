@@ -19,10 +19,10 @@ const Suggestion = () => {
     catch(err => console.log(err))
 
     // for suggestion json data fetching
-    /* fetch("http://localhost:3000/suggestions").
+    fetch("http://localhost:3000/suggestions").
     then(data => data.json()).
     then(data => setSuggestion(data)).
-    catch(err => console.log(err)) */
+    catch(err => console.log(err))
   },[]); 
 
   return (
@@ -35,6 +35,7 @@ const Suggestion = () => {
       <img className='rounded-circle' src={profile.profilePic} alt="profile pic"/>
       <h5>{profile.username}</h5>
       <p className='ms-auto  text-primary'>Switch</p>
+      <p> Your suggestion</p><br/>
       </div>
        :<p>Loading</p> }
        </div>
