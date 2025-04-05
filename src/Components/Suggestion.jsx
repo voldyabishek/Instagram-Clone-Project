@@ -28,22 +28,26 @@ const Suggestion = () => {
   return (
     <>
     <div>
+  
          <div className='suggestion'>
-      {profile  ?
+         {profile  ?   
 
      <div className='profile'>
+ 
       <img className='rounded-circle' src={profile.profilePic} alt="profile pic"/>
       <h5>{profile.username}</h5>
       <p className='ms-auto  text-primary'>Switch</p>
-      <p> Your suggestion</p><br/>
       </div>
-       :<p>Loading</p> }
+      :<p>Loading</p> }
+      
+      <p className=''>Your Suggestions</p>
+      
 
       <div className='d-flex '><br/>
       <p>Suggested for you</p>
       <b className='  ms-auto '>See All</b>
-
       </div>
+     
       {/* this div for suggestion list data mapping */}
            <div  >
 
@@ -72,7 +76,7 @@ const Suggestion = () => {
 
        </div>
 
-     </div>
+       </div>
     
     </>
   )

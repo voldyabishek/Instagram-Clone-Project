@@ -54,7 +54,7 @@ const Posts = () => {
               </div>
 
             ))}
-            ;
+       
           </div>
         ) : (
           <div>Loading Posts</div>
