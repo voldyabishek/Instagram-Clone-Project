@@ -25,15 +25,17 @@ const Posts = () => {
       <div className="Post-page">
         {posts.length > 0 ? (
           <div className="All-posts">
-            {posts.map((post) => (
-              <div key={post.id}>
+            {posts.map((Post) => (
+              <div key={Post.id}>
                 <div className="profile ">
                   {/* profile pic */}
-                  <img src={post.user.profilePic} className="rounded-circle" id="profile-pic" alt="profile picture" />
-                  <h5>{post.user.username}</h5>
+                  <img src={Post.user.profilePic} className="rounded-circle" id="profile-pic" alt="profile picture" />
+                  <h5>{Post.user.username}</h5>
                   </div>
-                {/* post pic */}
-                <img src={post.image} alt="post" id="post" />
+                {/* Post pic */}
+                <div className="post-imgs">
+                <img src={Post.image} alt="Post" id="post-img" />
+                </div>
                 
                <div className="lcs-icons">
              {/* like,comment,share=>lcs-icons */}
@@ -43,9 +45,9 @@ const Posts = () => {
              <AiOutlineRetweet/>
                </div>
                <div>
-                <p>{post.likes}Likes and others</p>
-                <p>{post.description}</p>
-                <p>{post.caption}</p>
+                <p>{Post.likes}Likes and others</p>
+                <p>{Post.description}</p>
+                <p>{Post.caption}</p>
 
                </div>
     

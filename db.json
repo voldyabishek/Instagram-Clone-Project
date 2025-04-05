@@ -116,6 +116,38 @@
         "profilePic": "profile-img3.avif",
         "fullName": "Lily Taylor"
       }
+    ],
+    "stories":[
+      {
+        "Id": "1",
+        "user": {
+          "userId": "101",
+          "username": "john_doe",
+          "profilePic": "profile-img1.avif",
+          "fullName": "John Doe"
+        },
+        "image": "profile-img1.avif"
+      },
+        {
+          "Id": "2",
+          "user": {
+            "userId": "104",
+            "username": "susan_m",
+            "profilePic": "profile-img2.avif",
+            "fullName": "Susan M"
+          },
+          "image": "profile-img2.avif"
+        },
+          {
+            "Id": "3",
+            "user": {
+              "userId": "106",
+              "username": "lily_t",
+              "profilePic": "profile-img3.avif",
+              "fullName": "Lily Taylor"
+            },
+            "image": "profile-img3.avif"
+          }
     ]
   }
   

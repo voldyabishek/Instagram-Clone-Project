@@ -15,6 +15,7 @@ margin-top: 8px;
 #profile-pic{
   height:40px;
   width:40px;
+  gap:10px;
   margin-top: -5px;
 }
 .profile{
@@ -24,8 +25,13 @@ margin-top: 8px;
 
 }
 
-#post{
+#post-img{
     width:300px;
+   
+}
+
+.post-imgs{
+    margin-top: 10px;
 }
 
 .lcs-icons{
