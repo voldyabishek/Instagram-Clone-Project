@@ -5,7 +5,7 @@ const Feed = () => {
   return (
     <div>
 
-        <div><Story/></div>
+        <div><Story /></div>
         <div><Posts/></div>
     </div>
   )

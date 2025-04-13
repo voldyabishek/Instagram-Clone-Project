@@ -6,7 +6,7 @@ const Story = () => {
 
   // data fetching for stories
   useEffect(() => {
-    fetch("http://localhost:3000/stories")
+    fetch("http://localhost:3000/story")
       .then((data) => data.json())
       .then((data) => setStories(data))
       .catch((err) => console.log(err));
@@ -19,9 +19,9 @@ const Story = () => {
         {stories.length > 0 ? (
           //map for stories
           <div>
-            {stories.map((storie) => {
-              <div key={storie.id}>
-                <img  src={storie.user.profilePic} alt="story pic"></img>
+            {stories.map((story) => {
+              <div key={story.id}>
+                <img  src={story.user.profilePic} alt="story pic"></img>
                 
               </div>
             })}
