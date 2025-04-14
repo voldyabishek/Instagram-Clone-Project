@@ -14,6 +14,8 @@ function App() {
     <div className='w-50 '> <Feed/></div>
     <div className='w-30'><Suggestion/></div>
     </div>
+
+     
     </>
   )
 }

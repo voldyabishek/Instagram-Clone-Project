@@ -1,3 +1,24 @@
-/* #story{
- height:70px;
-} */
+.story-container{
+    height: 130px;
+    padding: 15px;
+}
+
+.story-db{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    
+    
+}
+
+.story-dp-border{
+
+    width:74px;
+    height:74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#ff00ff,#ff6600,yellow);
+
+}
