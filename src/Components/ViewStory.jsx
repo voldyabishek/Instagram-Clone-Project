@@ -1,8 +1,23 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { useState } from 'react'
+const ViewStory = ()=>{
+const [view,setView]=useState([]);
 
-const ViewStory = () => {
+//data fetching for click by story view
+useEffect(()=>{
+  fetch("http://localhost:3000/story")
+
+})
+}
+
   return (
-    <div>ViewStory</div>
+   <>
+   
+
+   
+   
+   </>
   )
 }
 
