@@ -1,21 +1,22 @@
 
-import Sidebar from './Components/Sidebar'
-import Feed from './Components/Feed'
-import Suggestion from './Components/Suggestion'
-import './App.css'
 
+import './App.css'
+import HomePage from './Components/HomePage'
+import { BrowserRouter as Router,Routes,Route,Link } from 'react-router-dom'
+import ViewStory from './Components/ViewStory'
 function App() {
  
 
   return (
     <>
-    <div className='d-flex vh-100'>
-    <div className='w-20'> <Sidebar/></div>
-    <div className='w-50 '> <Feed/></div>
-    <div className='w-30'><Suggestion/></div>
-    </div>
+  <Router>
+    <Routes>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/ViewStory" element={<ViewStory/>}/>
+    </Routes>
+  </Router>
 
-     
+
     </>
   )
 }
