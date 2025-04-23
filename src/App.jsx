@@ -12,7 +12,7 @@ function App() {
   <Router>
     <Routes>
       <Route path="/" element={<HomePage/>}/>
-      <Route path="/ViewStory" element={<ViewStory/>}/>
+      <Route path="/ViewStory/:Id" element={<ViewStory />} />
     </Routes>
   </Router>
 

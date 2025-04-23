@@ -25,7 +25,7 @@ const Story = () => {
             {stories.map((story) => (
               <div key={story.Id} className="mx-2">
                 <div className="story-dp-border">
-               <Link to='ViewStory'> <img  src={story.user.profilePic} alt="story pic" className="story-db "></img></Link>
+                <Link to={`/ViewStory/${story.Id}`}><img  src={story.user.profilePic} alt="story pic" className="story-db "></img></Link>
                 </div>
                 <p className="text-truncate" style={{width:"50px"}}>{story.user.username}</p>
                 
