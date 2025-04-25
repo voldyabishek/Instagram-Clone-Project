@@ -119,7 +119,7 @@
     ],
     "story":[
       {
-        "Id": "1",
+        "id": 1,
         "user": {
           "userId": "101",
           "username": "john_doe",
@@ -129,7 +129,7 @@
         "image": "profile-img1.avif"
       },
         {
-          "Id": "2",
+          "id": 2,
           "user": {
             "userId": "104",
             "username": "susan_m",
@@ -139,7 +139,7 @@
           "image": "profile-img2.avif"
         },
           {
-            "Id": "3",
+            "id": 3,
             "user": {
               "userId": "106",
               "username": "lily_t",

@@ -23,9 +23,9 @@ const Story = () => {
           //map for stories
           <div className=" story-db-container d-flex">
             {stories.map((story) => (
-              <div key={story.Id} className="mx-2">
+              <div key={story.id} className="mx-2">
                 <div className="story-dp-border">
-                <Link to={`/ViewStory/${story.Id}`}><img  src={story.user.profilePic} alt="story pic" className="story-db "></img></Link>
+                <Link to={`/ViewStory/${story.id}`}><img  src={story.user.profilePic} alt="story pic" className="story-db "></img></Link>
                 </div>
                 <p className="text-truncate" style={{width:"50px"}}>{story.user.username}</p>
                 
@@ -33,7 +33,7 @@ const Story = () => {
             ))}
           </div>
         ) : (
-         
+          
             <p>stories loading</p>
           
         )}
