@@ -1,0 +1,24 @@
+.story-img-content{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .story-img{
+    width:30%;
+    height:100vh;
+    background-color:rgba(194, 190, 190, 0.884) ;
+} */
+
+.story-username{
+    position:absolute;
+    top:20px;
+    left:650px;
+}
+
+.story-change-arrow{
+
+    font-size:35px;
+}

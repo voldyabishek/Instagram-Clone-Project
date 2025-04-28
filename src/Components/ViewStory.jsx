@@ -1,41 +1,51 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams,Link, useNavigate } from 'react-router-dom';
 
-
+import "../CssComponents/ViewStory.css"
+//icons
+import { IoIosArrowDropleft } from "react-icons/io";
+import { IoIosArrowDropright } from "react-icons/io";
 
 const ViewStory = ()=>{
 
-  const {id}=useParams();
+  const {id,total}=useParams();
 
-const [view,setView]=useState(null);
-//data fetching for click by story view
+
+const [story,setStory]=useState(null);
+
+const navigate =useNavigate()
+//data fetching for click by view story
 useEffect(()=>{
   fetch(`http://localhost:3000/story/${id}`)
   .then(data=>data.json())
-  .then(data => setView(data))
-//   .then((data)=>{
-//     const selectedStory =data.find(()=> item.id===id);
-//     setView(selectedStory)
-// })
+  .then(data => setStory(data))
   .catch((err)=>console.log(err));
 
 },[id])
-
-
+//if condition for not go for illtha next stories 
+if(id > total || id <=0){
+  navigate('/');
+}
+      
   return (
    <>
    
 <div className='view-story'>
-   {view ?(
-     <div>
-    <img src={view.image} alt="Story full view" style={{ maxWidth: "100%" }} />
-     <h3>{view.user.fullName}</h3>
+   {story ?(
+     <div className='story-img-content'>
+        <div key={story.id}> 
+     < Link to={`http://localhost:5173/ViewStory/${Number(id)-1}/${total}`}><IoIosArrowDropleft className='story-change-arrow' /></Link>
+    {/* <img src={`/images/${story.user.profilePic}`} alt="Story images" /> */}
+    <img src={`http://localhost:3000/${story.image}`} alt="Story images" />
+    < Link to={`http://localhost:5173/ViewStory/${Number(id)+1}/${total}`}> <IoIosArrowDropright className='story-change-arrow'/></Link>
+     <h3  className='story-username'>{story.user.fullName}</h3>
    </div>
        
-
-
+   
+      
+</div>
    ):(
    
       <p>stories loading</p>
@@ -43,9 +53,9 @@ useEffect(()=>{
    )}
 </div>
    
-   
+  
    </>
   )
 }
 
-export default ViewStory
+export default ViewStory;

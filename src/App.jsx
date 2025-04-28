@@ -12,7 +12,7 @@ function App() {
   <Router>
     <Routes>
       <Route path="/" element={<HomePage/>}/>
-      <Route path="/ViewStory/:id" element={<ViewStory />} />
+      <Route path="/ViewStory/:id/:total" element={<ViewStory />} />
     </Routes>
   </Router>
 
