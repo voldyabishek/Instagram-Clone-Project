@@ -2,6 +2,7 @@ import React from 'react'
 import  { useState } from 'react';
 import  { useEffect} from 'react';
 import "../CssComponents/Suggestion.css"
+import axios from 'axios';
 
 
 const Suggestion = () => {
@@ -25,6 +26,12 @@ const Suggestion = () => {
     catch(err => console.log(err))
   },[]); 
 
+
+  const handleFollow = async(id,username)=>{
+    axios.post("http://localhost:3000/followers",{"id":id,"username":username})
+    .then(alert("followed successfully"))
+    .catch(err=>console.log(err))
+  }
   return (
     <>
     <div>
@@ -60,7 +67,7 @@ const Suggestion = () => {
                             <div className='suggestion-list '>
                               <img className="rounded-circle"src={suggestion.profilePic}></img>
                               <h5>{suggestion.username}</h5>
-                              <p className='text-primary  '>Follow</p>
+                              <a className='text-primary'  onClick={()=>{handleFollow(suggestion.id,suggestion.username)}}>Follow</a>
                             </div>
                        </div>
 

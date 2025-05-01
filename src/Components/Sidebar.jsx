@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/instagram-text.jpg";
 import "../CssComponents/Sidebar.css";
+import { Link } from "react-router-dom";
 // icons imports
 import { MdHomeFilled } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
@@ -24,18 +25,20 @@ const Sidebar = () => {
         {/* instagram text logo */}
          <img  src="src\assets\instagram-text.jpg" className="instagram-text"/>
             {/* icons */}
-            <div><MdHomeFilled className="sidebar-icons" />Home</div>
+            
+           <div><MdHomeFilled className="sidebar-icons" />Home</div>
             <div><IoIosSearch className="sidebar-icons" />Search</div>
             <div><MdOutlineExplore className="sidebar-icons"/>Explore</div>
             <div><RiMovieLine className="sidebar-icons"/>Reels</div>
             <div><FiMessageCircle className="sidebar-icons"/>Messages</div>
             <div><AiOutlineNotification className="sidebar-icons"/>Notifications</div>
             <div><VscDiffAdded className="sidebar-icons"/>Create</div>
-            <div><CgProfile className="sidebar-icons"/>Profile</div>
+            <Link to="Profile" className="all-icons-link"> <div><CgProfile className="sidebar-icons"/>Profile</div></Link>
       </div>
       <div className="other-navigate">
         <div><FaThreads className="sidebar-icons"/>Threads</div>
         <div><CiSquareMore className="sidebar-icons"/>More</div>
+        
       </div>
       </div>
     </>

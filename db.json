@@ -1,163 +1,217 @@
 {
-    "posts": [
-      {
-        "postId": "1",
-        "user": {
-          "userId": "101",
-          "username": "john_doe",
-          "profilePic": "profile-img1.avif",
-          "fullName": "John Doe"
-        },
-        "image": "profile-img1.avif",
-        "caption": "Enjoying the sunset with friends! #sunsetvibes",
-        "likes": 254,
-        "comments": [
-          {
-            "commentId": "1",
-            "userId": "102",
-            "username": "jane_smith",
-            "comment": "Looks amazing! 😍"
-          },
-          {
-            "commentId": "2",
-            "userId": "103",
-            "username": "alex_rouse",
-            "comment": "Wish I was there!"
-          }
-        ],
-        "timestamp": "2025-03-28T12:45:00Z"
-      },
-      {
-        "postId": "2",
-        "user": {
-          "userId": "104",
-          "username": "susan_m",
-          "profilePic": "profile-img2.avif",
-          "fullName": "Susan M"
-        },
-        "image": "profile-img2.avif",
-        "caption": "Weekend vibes! 🌿 #relaxationtime",
-        "likes": 198,
-        "comments": [
-          {
-            "commentId": "1",
-            "userId": "105",
-            "username": "mark_jones",
-            "comment": "Such a peaceful place! 💚"
-          }
-        ],
-        "timestamp": "2025-03-27T08:00:00Z"
-      },
-      {
-        "postId": "3",
-        "user": {
-          "userId": "106",
-          "username": "lily_t",
-          "profilePic": "profile-img3.avif",
-          "fullName": "Lily Taylor"
-        },
-        "image": "profile-img3.avif",
-        "caption": "Throwback to last summer's road trip! 🚗💨",
-        "likes": 312,
-        "comments": [
-          {
-            "commentId": "1",
-            "userId": "107",
-            "username": "tom_smith",
-            "comment": "Best road trip ever! Let’s do it again soon!"
-          },
-          {
-            "commentId": "2",
-            "userId": "108",
-            "username": "emily_walker",
-            "comment": "Amazing! Road trip goals! 😎"
-          }
-        ],
-        "timestamp": "2025-03-25T18:30:00Z"
-      }
-    ],
-    "profile":{
-     
+  "posts": [
+    {
+      "postId": "1",
+      "user": {
         "userId": "101",
         "username": "john_doe",
         "profilePic": "profile-img1.avif",
         "fullName": "John Doe"
-     
+      },
+      "image": "profile-img1.avif",
+      "caption": "Enjoying the sunset with friends! #sunsetvibes",
+      "likes": 254,
+      "comments": [
+        {
+          "commentId": "1",
+          "userId": "102",
+          "username": "jane_smith",
+          "comment": "Looks amazing! 😍"
+        },
+        {
+          "commentId": "2",
+          "userId": "103",
+          "username": "alex_rouse",
+          "comment": "Wish I was there!"
+        }
+      ],
+      "timestamp": "2025-03-28T12:45:00Z",
+      "id": "55e4"
     },
-    "suggestions":[
-
-      {
-        "userId": "101",
-        "username": "john_doe",
-        "profilePic": "profile-img1.avif",
-        "fullName": "John Doe"
-      },
-      {
+    {
+      "postId": "2",
+      "user": {
         "userId": "104",
         "username": "susan_m",
         "profilePic": "profile-img2.avif",
         "fullName": "Susan M"
       },
-      {
+      "image": "profile-img2.avif",
+      "caption": "Weekend vibes! 🌿 #relaxationtime",
+      "likes": 198,
+      "comments": [
+        {
+          "commentId": "1",
+          "userId": "105",
+          "username": "mark_jones",
+          "comment": "Such a peaceful place! 💚"
+        }
+      ],
+      "timestamp": "2025-03-27T08:00:00Z",
+      "id": "9c92"
+    },
+    {
+      "postId": "3",
+      "user": {
         "userId": "106",
         "username": "lily_t",
         "profilePic": "profile-img3.avif",
         "fullName": "Lily Taylor"
       },
-      {
-        "userId": "106",
-        "username": "lily_two",
-        "profilePic": "profile-img3.avif",
-        "fullName": "Lily Taylor"
-      },
-      {
-        "userId": "106",
-        "username": "lily_yt",
-        "profilePic": "profile-img3.avif",
-        "fullName": "Lily Taylor"
-      }
-    ],
-    "story":[
-      {
-        "id": 1,
-        "user": {
-          "userId": "101",
-          "username": "john_doe",
-          "profilePic": "profile-img1.avif",
-          "fullName": "John Doe"
-        },
-        "image": "story-img-1.avif"
-      },
+      "image": "profile-img3.avif",
+      "caption": "Throwback to last summer's road trip! 🚗💨",
+      "likes": 312,
+      "comments": [
         {
-          "id": 2,
-          "user": {
-            "userId": "104",
-            "username": "susan_m",
-            "profilePic": "profile-img2.avif",
-            "fullName": "Susan M"
-          },
-          "image": "story-img-2.avif"
+          "commentId": "1",
+          "userId": "107",
+          "username": "tom_smith",
+          "comment": "Best road trip ever! Let’s do it again soon!"
         },
-          {
-            "id": 3,
-            "user": {
-              "userId": "106",
-              "username": "lily_t",
-              "profilePic": "profile-img3.avif",
-              "fullName": "Lily Taylor"
-            },
-            "image": "story-img-3.avif"
-          },
-          {
-            "id": 4,
-            "user": {
-              "userId": "106",
-              "username": "lily_t",
-              "profilePic": "profile-img3.avif",
-              "fullName": "Lily Taylor"
-            },
-            "image": "story-img-3.avif"
-          }
-    ]
-  }
-  
+        {
+          "commentId": "2",
+          "userId": "108",
+          "username": "emily_walker",
+          "comment": "Amazing! Road trip goals! 😎"
+        }
+      ],
+      "timestamp": "2025-03-25T18:30:00Z",
+      "id": "1db6"
+    }
+  ],
+  "profile": {
+    "userId": "101",
+    "username": "voldy_boii",
+    "profilePic": "story-img-1.avif",
+    "fullName": "John Doe"
+  },
+  "suggestions": [
+    {
+      "userId": "101",
+      "username": "john_doe",
+      "profilePic": "profile-img1.avif",
+      "fullName": "John Doe",
+      "id": "39c1"
+    },
+    {
+      "userId": "104",
+      "username": "susan_m",
+      "profilePic": "profile-img2.avif",
+      "fullName": "Susan M",
+      "id": "6292"
+    },
+    {
+      "userId": "106",
+      "username": "lily_t",
+      "profilePic": "profile-img3.avif",
+      "fullName": "Lily Taylor",
+      "id": "85e1"
+    },
+    {
+      "userId": "106",
+      "username": "lily_two",
+      "profilePic": "profile-img3.avif",
+      "fullName": "Lily Taylor",
+      "id": "2442"
+    },
+    {
+      "userId": "106",
+      "username": "lily_yt",
+      "profilePic": "profile-img3.avif",
+      "fullName": "Lily Taylor",
+      "id": "c42d"
+    }
+  ],
+  "story": [
+    {
+      "id": "1",
+      "user": {
+        "userId": "101",
+        "username": "john_doe",
+        "profilePic": "profile-img1.avif",
+        "fullName": "John Doe"
+      },
+      "image": "story-img-1.avif"
+    },
+    {
+      "id": "2",
+      "user": {
+        "userId": "104",
+        "username": "susan_m",
+        "profilePic": "profile-img2.avif",
+        "fullName": "Susan M"
+      },
+      "image": "story-img-2.avif"
+    },
+    {
+      "id": "3",
+      "user": {
+        "userId": "106",
+        "username": "lily_t",
+        "profilePic": "profile-img3.avif",
+        "fullName": "Lily Taylor"
+      },
+      "image": "story-img-3.avif"
+    },
+    {
+      "id": "4",
+      "user": {
+        "userId": "106",
+        "username": "lily_t",
+        "profilePic": "profile-img3.avif",
+        "fullName": "Lily Taylor"
+      },
+      "image": "story-img-3.avif"
+    }
+  ],
+  "followers": [
+    {
+      "id": "101",
+      "username": "alexsmith",
+      "profilePic": "https://instagram.com/path/to/alexsmith.jpg"
+    },
+    {
+      "id": "102",
+      "username": "emily.jane",
+      "profilePic": "https://instagram.com/path/to/emilyjane.jpg"
+    },
+    {
+      "id": "103",
+      "username": "michael_lee",
+      "profilePic": "https://instagram.com/path/to/michaellee.jpg"
+    },
+    {
+      "id": "104",
+      "username": "sarah.connor",
+      "profilePic": "https://instagram.com/path/to/sarahconnor.jpg"
+    },
+    {
+      "id": "dce7"
+    },
+    {
+      "id": "ee4b"
+    },
+    {
+      "id": "fece"
+    },
+    {
+      "id": "d630"
+    },
+    {
+      "id": "151b"
+    },
+    {
+      "id": "d008"
+    },
+    {
+      "id": "15b9"
+    },
+    {
+      "id": "1f14"
+    },
+    {
+      "id": "2442",
+      "username": "lily_two"
+    }
+  ]
+}
